@@ -1,0 +1,13 @@
+local lib = loadstring(game:HttpGet('https://raw.githubusercontent.com/loglizzy/lib/main/main.lua'))()
+local window = lib:Window('blatant.cc')
+
+window:Magnet('toggle', function(enabled)
+     print(enabled)
+end)
+
+window:Slider('slider', {
+     max = 30,
+     def = 0
+}, function(value)
+     print(value)
+end)
